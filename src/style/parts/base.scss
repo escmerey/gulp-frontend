@@ -1,0 +1,56 @@
+html,
+body {
+	overflow-x: hidden !important;
+	margin: 0 !important;
+	font-family: '', sans-serif;
+	color: #000;
+	font-size: 16px;
+	background-color: #ffffff;
+}
+
+html {
+	position: relative;
+}
+
+body {
+	line-height: normal;
+}
+
+section,
+header,
+footer {
+	position: relative;
+	width: 100%;
+	margin: 0 auto;
+}
+
+a,
+button {
+	cursor: pointer;
+	text-decoration: none;
+	color: inherit;
+	* {
+		cursor: pointer;
+	}
+}
+
+input,
+textarea,
+button {
+	font-family: inherit;
+}
+
+b {
+	font-weight: 700;
+}
+
+.debug{
+	z-index: 99999;
+	background-color: rgba(#000,0.5);
+	@include debug(transparent, 1px solid yellow);
+	display: none;
+}
+
+.b_center{
+	@include wrapper();
+}
